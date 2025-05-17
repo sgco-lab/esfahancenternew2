@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: پاسخ به سوالات مکان‌های دیدنی
+  steps:
+    - intent: ask_place
+    - action: utter_ask_place
+
+- rule: پاسخ به سوالات رستوران‌ها
+  steps:
+    - intent: ask_restaurant
+    - action: utter_ask_restaurant
+
+- rule: پاسخ به سوالات تورها
+  steps:
+    - intent: ask_tour
+    - action: utter_ask_tour
+
+- rule: پاسخ به سوالات فرهنگی
+  steps:
+    - intent: ask_culture
+    - action: utter_ask_culture
+
+- rule: پاسخ به سوالات خدمات
+  steps:
+    - intent: ask_services
+    - action: utter_ask_services
+
+- rule: پاسخ به سوالات غیرمرتبط
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
